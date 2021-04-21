@@ -1,5 +1,5 @@
 class AddSeasonToShows < ActiveRecord::Migration[5.2]
-  highest_rating.maximum(:rating)
-  most_popular_show
-  lowest_rating.minimum(:rating)
+  def change
+    add_column :shows, :season, :string
+  end
 end
